@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+.icon a img {
+  width: 38px;
+  height: 28px;
+  transition: 0.3s ease-in-out;
+}
+.icon a img:hover {
+  width: 42px;
+  height: 32px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/img/bg2.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body > .wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+body > .wrapper form a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+body > .wrapper form a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: 0.3s;
+  left: 50%;
+  transform: translate(-50%);
+}
+body > .wrapper form a:hover:after {
+  width: 100%;
+}
+body > .wrapper form > h1 {
+  font-size: 36px;
+  text-align: center;
+}
+body > .wrapper form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+body > .wrapper form .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+body > .wrapper form .input-box input::-moz-placeholder {
+  color: #fff;
+}
+body > .wrapper form .input-box input::placeholder {
+  color: #fff;
+}
+body > .wrapper form .input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+body > .wrapper form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+body > .wrapper form .remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+body > .wrapper form .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+body > .wrapper form .btn:hover {
+  font-size: 19px;
+  box-shadow: 5px 5px 15px 0px rgba(255, 255, 255, 0.95);
+}
+body > .wrapper form .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+body > .wrapper form .register-link p {
+  margin-bottom: 20px;
+}
+body > .wrapper form .register-link .msgErr {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+}
+body > .wrapper form .register-link .msgSuccess {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
+body > .wrapper form .home-link {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto Slab", serif;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.icon a img {
+  width: 38px;
+  height: 28px;
+  transition: 0.3s ease-in-out;
+}
+.icon a img:hover {
+  width: 42px;
+  height: 32px;
+}
+
+.container {
+  margin: 0 45px;
+}
+.container > cl {
+  color: #242020;
+}
+.container > table {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  box-shadow: 20px 35px 10px rgba(0, 0, 0, 0.5);
+  --bs-table-bg: none;
+  --bs-table-color: #242020;
+}
+
+.form-block {
+  position: relative;
+  animation: slideIn 2s ease-in-out;
+}
+.form-block > form {
+  position: absolute;
+  top: 15px;
+  width: 294px;
+}
+.form-block > form .msgErr {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+}
+.form-block > form .message-form-done {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
+.form-block > form > h1 {
+  font-size: 28px;
+  color: #efefef;
+  font-weight: 300;
+}
+.form-block > form > input {
+  color: #cecda4;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  height: 40px;
+  display: flex;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 0 10px;
+  transition: border 0.3s ease;
+}
+.form-block > form > input::-webkit-outer-spin-button, .form-block > form > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-block > form > input:focus-visible {
+  transition: 0.3s ease;
+  outline: none;
+  border: 2px double rgba(0, 0, 0, 0.4);
+}
+.form-block > form > input::-moz-placeholder {
+  font-size: 14px;
+  color: #efefef;
+  opacity: 0.5;
+  letter-spacing: 0.8px;
+}
+.form-block > form > input::placeholder {
+  font-size: 14px;
+  color: #efefef;
+  opacity: 0.5;
+  letter-spacing: 0.8px;
+}
+.form-block > form > button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.form-block > form > button:hover {
+  box-shadow: 5px 5px 15px 0px rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+}
+.form-block > form > button:focus-visible {
+  outline: none;
+}
+
+header {
+  position: relative;
+  animation: slideOut 2s ease-in-out;
+}
+header .logout {
+  display: flex;
+  align-items: center;
+}
+header .logout .list-form {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #efefef;
+  text-decoration: none;
+}
+header .logout .list-form:hover {
+  text-decoration: underline;
+}
+header .logout .user-name {
+  color: #efefef;
+  margin-right: 15px;
+}
+header > .sign-block, header .logout {
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+}
+header > .sign-block > .btn, header .logout > .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: transparent;
+  color: #efefef;
+  border: 1px solid #fff;
+  transition: 0.3s ease-in-out;
+}
+header > .sign-block > .btn:hover, header .logout > .btn:hover {
+  box-shadow: 0 5px 10px 0 rgb(194, 50, 121);
+  font-size: 17px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-140%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(140%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
